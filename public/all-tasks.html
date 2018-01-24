@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/3979f92792.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <title>Task Manager</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+  <body>
+    <div id="all-tasks">
+      <section class="header">
+        <div class="top-container">
+          <div class="logo">
+            Task manager
+          </div>
+
+          <div class="task-total">
+            <div class="task">
+              <span class="number">5</span> Task Completed
+            </div>
+            <div class="task">
+              <span class="number">20</span>Tasks Incomplete
+            </div>
+          </div>
+
+          <div class="add-circle">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-area">
+       <div class="todo-container">
+         <div class="todo-box">
+           <div class="title">
+             Complete Reponsive Web Project
+           </div>
+
+           <div class="date">
+             Created November 22, 2017
+           </div>
+
+           <div class="check-mark">
+             <i class="fa fa-check" aria-hidden="true"></i>
+           </div>
+         </div>
+
+         <div class="todo-box">
+           <div class="title">
+             Start Javascript Course at Codingphase.com
+           </div>
+
+           <div class="date">
+             Created November 19, 2017
+           </div>
+
+           <div class="check-mark">
+             <i class="fa fa-check" aria-hidden="true"></i>
+           </div>
+         </div>
+
+         <div class="todo-box">
+           <div class="title">
+             Start Javascript Course at Codingphase.com
+           </div>
+
+           <div class="date">
+             Created November 19, 2017
+           </div>
+
+           <div class="check-mark">
+             <i class="fa fa-check" aria-hidden="true"></i>
+           </div>
+         </div>
+
+         <div class="todo-box">
+           <div class="title">
+             Start Javascript Course at Codingphase.com
+           </div>
+
+           <div class="date">
+             Created November 19, 2017
+           </div>
+
+           <div class="check-mark">
+             <i class="fa fa-check" aria-hidden="true"></i>
+           </div>
+         </div>
+
+         <div class="todo-box">
+           <div class="title">
+             Start Javascript Course at Codingphase.com
+           </div>
+
+           <div class="date">
+             Created November 19, 2017
+           </div>
+
+           <div class="check-mark">
+             <i class="fa fa-check" aria-hidden="true"></i>
+           </div>
+         </div>
+
+         <div class="todo-box">
+           <div class="title">
+             Start Javascript Course at Codingphase.com
+           </div>
+
+           <div class="date">
+             Created November 19, 2017
+           </div>
+
+           <div class="check-mark">
+             <i class="fa fa-check" aria-hidden="true"></i>
+           </div>
+         </div>
+
+         <div class="todo-box">
+           <div class="title">
+             Start Javascript Course at Codingphase.com
+           </div>
+
+           <div class="date">
+             Created November 19, 2017
+           </div>
+
+           <div class="check-mark">
+             <i class="fa fa-check" aria-hidden="true"></i>
+           </div>
+         </div>
+       </div>
+      </section>
+
+      <section class="task-form">
+        <form class="user-form">
+          <div class="close-btn">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+          <h3>Add Your Task</h3>
+          <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" name="title"/>
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category:</label>
+            <input type="text" name="category"/>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Notes:</label>
+            <textarea name="notes"></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit">Add to the list</button>
+          </div>
+        </form>
+      </section>
+
+    </div>
+
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.add-circle').on('click', function(){
+          $('.task-form').addClass('active')
+        })
+
+        $('.task-form .close-btn').on('click', function(){
+          $('.task-form').removeClass('active')
+        })
+      })
+    </script>
+  </body>
+</html>
