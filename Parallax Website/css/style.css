@@ -1,0 +1,81 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body,html{
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  background: white;
+  height:100%;
+}
+
+.img-1, .img-2, .img-3{
+  position: relative;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  opacity:.7;
+}
+
+.img-1{
+  background: url('../img/img1.jpeg');
+  min-height:100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.img-2{
+  background: url('../img/img2.jpg');
+  min-height:400px;
+  background-attachment: fixed;
+}
+
+.img-3{
+  background: url('../img/img3.jpeg');
+  min-height:400px;
+  background-attachment: fixed;
+}
+
+.text-1 {
+  width:100%;
+  text-align:center;
+  padding:30px 30px;
+  background:#f4f4f4;
+}
+
+.text-2 {
+  width:100%;
+  text-align:center;
+  padding:30px 30px;
+  background:#f4f4f4;
+}
+
+.text-3 {
+  width:100%;
+  text-align:center;
+  padding:30px 30px;
+  background:#f4f4f4;
+}
+
+.container{
+  position: absolute;
+  top:50%;
+  width:100%;
+  text-align: center;
+  font-size:30px;
+  font-weight:100;
+  letter-spacing: 10px;
+  color:#fff;
+}
+
+.container .border{
+  background:rgba(0, 0, 0, 0.9);
+  padding:20px;
+}
+
+@media(max-width:768px){
+  .img-1, .img-2, .img-3{
+    background-attachment: scroll;
+  }
+}
