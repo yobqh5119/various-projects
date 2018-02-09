@@ -21,6 +21,10 @@ body, h1, h2, h3, h4, h5, p {
   height:100%;
   height:100vh;
 }
+html,body{
+  width:100%;
+  overflow-x: hidden;
+}
 
 body{
   background: #ebebeb;
@@ -475,8 +479,9 @@ footer{
 
 /********** Screen Size 400px **********/
 @media (max-width:400px){
-  .full{
+  .full, #landing, #about, #skill, #projects, #contact{
     height:100%;
+    width:100%;
   }
   /*header*/
   #header .row h1, #header ul{
@@ -551,9 +556,7 @@ footer{
     font-size:12px;
   }
   #skill .box-container{
-    grid-template-columns:1fr 1fr;
-    margin:0;
-    padding:0;
+    grid-template-columns:1fr;
   }
 
   /*Projects*/
@@ -717,12 +720,10 @@ footer{
   }
   #projects .box-wrapper{
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 300px 300px 300px;
     grid-row-gap: 20px;
   }
   #projects .box-wrapper .box{
-    width:100%;
-    height:100%;
   }
   #projects .box-wrapper .box div{
     height:100%;
@@ -747,6 +748,7 @@ footer{
 
   #contact .form-container{
     width:500px;
+    padding:30px;
   }
   #contact .form-container input, .form-container textarea {
     font-size:1.1rem;
@@ -768,7 +770,8 @@ footer{
 
   /*Favicons*/
   #contact .icon-wrapper{
-    margin-top:100px;
+    margin-top:0px;
+    padding-top:100px;
     grid-template-columns: 1fr;
     grid-row-gap: 30px;
   }
@@ -807,6 +810,9 @@ footer{
   #projects .box-wrapper .box div{
   }
   /*icons*/
+  #contact .form-container{
+    padding:30px;
+  }
   #contact .icon-wrapper{
     margin-top:100px;
     grid-template-columns: 1fr;
