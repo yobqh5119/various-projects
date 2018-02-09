@@ -1,121 +1,192 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Yoobin | Front-End Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/flexboxgrid.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="./css/main.css">
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>Yoobin | Portfolio</title>
   </head>
   <body>
-      <section class="front-page">
-        <div class="header">
-          <div class="name">
-            Yoobin Hong
+  <section class="full">
+
+    <header id="header">
+      <div class="container">
+        <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+            <h1>Yoobin Hong</h1>
           </div>
 
-          <div class="menu">
+          <div class="menu col-xs-12 col-sm-12 col-md-9 col-lg-9">
             <ul>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#about">About</a></li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#skill">Skill</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
+      </div> <!-- End of the Container -->
+    </header>
 
-        <div class="title">
-          <div class="title-container">
-            <div class="title-text">
-              <h3>Portfolio of Yoobin Hong</h3>
-            </div>
+    <section id="landing">
+      <div class="wrapper">
+        <div class="box">
+          <p class="hello">Hello, World.</p>
+          <h1>I'm Yoobin Hong.</h1>
+          <p class="position">Front-End Web Developer</p></br>
+          <a href="#">More About Me</a>
+        </div>
+      </div>
+    </section>
+  </section> <!-- Closing of the full page landing photo -->
 
-            <div class="title-description">
-              <p>Front-End Developer Specialized in HTML5, CSS3, JAVASCRIPT, SASS</p>
-            </div>
+  <section id="about">
+    <div class="container">
+      <div class="row title center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+        <div class="title-container">
+          <h2>About</h2>
+          <h3>Let me introduce myself.</h3>
+        </div>
+      </div>
 
-            <div class="buttons">
-                <a class="btn-aboutme"href="#about"> learn more about me </a>
+      <div class="row center-xs center-sm center-md center-lg top-xs top-sm top-md top-lg">
+        <div class="img col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <img src="./img/yoobin.jpg" alt="my profile picture">
+        </div>
+        <div class="description col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <p>Hello! My name is Yoobin. To give you a brief introduction about myself, I am an immigrant from South Korea who moved to United States back in 2003. I attended Pennsylvania State University and graduated with degrees in International Relations and African Studies. It was only after graduation that I came across web programming that I started to develop passion for it. I am currently a self taught web developer specializing in front-end aspect of the web development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skill">
+    <div class="container">
+      <div class="row title center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+        <div class="title-container">
+          <h2>Skills</h2>
+          <h3>These are my skillset.</h3>
+          <p>I am constantly learning and creating new web projects to develop deeper understanding of web development. My current focus is to build deeper understanding of vanilla Javascript and learn backend language to become Full Stack Developer.</p>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <div><i class="fab fa-html5 fa-7x"></i></div>
+          <h3>HTML5</h3>
+        </div>
+
+        <div class="box">
+          <div><i class="fab fa-css3 fa-7x"></i></div>
+          <h3>CSS3</h3>
+        </div>
+
+        <div class="box">
+          <div><i class="fas fa-bold fa-7x"></i></div>
+          <h3>Bootstrap</h3>
+        </div>
+
+        <div class="box">
+          <div><i class="fab fa-sass fa-7x"></i></div>
+          <h3>SASS</h3>
+
+        </div>
+
+        <div class="box">
+          <div><i class="fab fa-js-square fa-7x"></i></div>
+          <h3>JavaScript</h3>
+
+        </div>
+
+        <div class="box">
+          <div><i class="fab fa-github fa-7x"></i></div>
+          <h3>GitHub</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="title-wrapper">
+        <div class="title box">
+          <h2>Projects</h2>
+          <h3>Here Are Some Of My Projects.</h3>
+        </div>
+      </div>
+
+      <div class="box-wrapper">
+        <div class="box1 box">
+          <div class="project">
+            <div class="a-container">
+              <a href="./DigitAd/index.html">View</a>
             </div>
           </div>
         </div>
-
-        <div class="arrow">
-          <a href="#about" class="down-arrow"></a>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="about-container">
-          <div class="about-title">
-            <h3>About Me</h3>
-          </div>
-
-          <div class="about-img">
-            <img src="../img/yoobin.jpg">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et purus non augue porta imperdiet. Donec auctor diam sit amet sapien facilisis fermentum. Nullam viverra, turpis eget hendrerit accumsan, elit lorem imperdiet neque, non feugiat justo sapien nec turpis. Nullam gravida, urna sit amet rutrum porta, orci libero fringilla risus, quis lacinia leo diam a erat. Nullam quis viverra neque. Sed semper congue nibh nec auctor. Aliquam pellentesque et lorem nec posuere. Vivamus vitae maximus lorem. Donec nibh neque, rhoncus in ex quis, scelerisque dignissim mauris.</p>
-          </div>
-
-          <div class="about-arrow">
-            <a href="#projects" class="about-down-arrow"></a>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="project-container">
-          <div class="project-title">
-            <h3>My Projects</h3>
-          </div>
-
-          <div class="project-list-container">
-
-            <div class="project-list" comment="Social Media Page
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et purus non augue porta imperdiet. Donec auctor diam sit amet sapien facilisis fermentum. Nullam viverra, turpis eget hendrerit accumsan, elit lorem imperdiet neque, non feugiat justo sapien nec turpis."></div>
-
-            <div class="project-list" comment="To-Do List App
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et purus non augue porta imperdiet. Donec auctor diam sit amet sapien facilisis fermentum. Nullam viverra, turpis eget hendrerit accumsan, elit lorem imperdiet neque, non feugiat justo sapien nec turpis."></div>
-
-            <div class="project-list" comment="Portfolio Website
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et purus non augue porta imperdiet. Donec auctor diam sit amet sapien facilisis fermentum. Nullam viverra, turpis eget hendrerit accumsan, elit lorem imperdiet neque, non feugiat justo sapien nec turpis."></div>
-
-            <div class="project-list" comment="Instagram Mockup
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et purus non augue porta imperdiet. Donec auctor diam sit amet sapien facilisis fermentum. Nullam viverra, turpis eget hendrerit accumsan, elit lorem imperdiet neque, non feugiat justo sapien nec turpis."></div>
-
-          </div> <!--closing tag of project-list-container -->
-          <div class="about-arrow">
-            <a href="#contact" class="about-down-arrow"></a>
-          </div>
-        </div> <!-- closing tag of project-container -->
-      </section> <!-- project section closing tag -->
-
-      <section id="contact">
-        <div class="contact-container">
-          <div class="contact-title">
-            <h3>Contact Me</h3>
-          </div>
-
-          <div class="contact-form">
-            <div class="name-container">
-              <input class="name"type="text" placeholder="Name"/>
-            </div>
-
-            <div class="email-container">
-              <input class="email" type="email" placeholder="E-mail Address" />
-            </div>
-
-            <div class="message-container">
-              <textarea class="message" placeholder="Comment"></textarea>
-            </div>
-
-            <div class="btn">
-              <button>Submit</button>
+        <div class="box2 box">
+          <div class="project">
+            <div class="a-container">
+              <a href="./Simple/index.html">View</a>
             </div>
           </div>
         </div>
-      </section>
+        <div class="box3 box">
+          <div class="project">
+            <div class="a-container">
+              <a href="./RSVP/index.html">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="contact">
+    <div class="title-wrapper">
+        <div class="title box">
+          <h2>Contact</h2>
+          <h3>I'd Love To Hear From You.</h3>
+          <p>Feel free to reach out to me if you have any question about my work or if you just want to talk with me. Email would be my preferred method of communication</p>
+        </div>
+      </div>
+
+    <div class="form-container">
+      <form class="user-form">
+        <input type="text" name="" value="" placeholder="Name">
+        <input type="email" name="" value="" placeholder="Email">
+        <input type="text" name="" value=""placeholder="Subject">
+        <textarea placeholder="Message"name="message" rows="8" cols="80"></textarea>
+      </form>
+      <a href="#">Submit</a>
+    </div>
+    <div class="icon-wrapper">
+      <div class="icon">
+        <div class="faContainer"><i class="far fa-envelope fa-3x"></i></div>
+        <h4>Email me at</h4>
+        <p>yqh5119.web@gmail.com</p>
+      </div>
+      <div class="icon">
+        <div class="faContainer"><i class="fas fa-phone fa-3x"></i></div>
+        <h4>Call me at</h4>
+        <p>please use my email</p>
+      </div>
+      <div class="icon icon3">
+        <div class="faContainer"><i class="fab fa-github-alt fa-3x"></i></div>
+        <h4>Visit my projects at</h4>
+        <p>https://github.com/yobqh5119/yoobin.github.io</p>
+      </div>
+    </div>
+  </section>
+  <footer>Created By Yoobin Hong</footer>
+    <script src="./js/main.js" charset="utf-8"></script>
   </body>
 </html>

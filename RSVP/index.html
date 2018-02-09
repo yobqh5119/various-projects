@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RSVP App</title>
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>RSVP</h1>
+      <p>Invitation Tracker </p>
+      <form id="registrar">
+        <input type="text" name="name" placeholder="Invite Someone">
+        <button type="submit" name="submit" value="submit">Submit</button>
+      </form>
+    </header>
+
+    <div class="main">
+      <h2>Invitees</h2>
+      <ul id="invitedList"></ul>
+    </div>
+  </div>
+
+  <div class="instruction">
+  <h3>Instruction</h3>
+  <ol>
+    <li>Type the name of the person you want to invite</li>
+    <li>Check whether or not they confirmed their visit</li>
+    <li>Using remove and edit function make necessary changes</li>
+    <li>Filter out the list using Hide button on the right</li>
+  </ol>
+<script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>
