@@ -483,9 +483,13 @@ footer{
     display:none;
   }
 
+  /*about*/
+  #about{
+    margin: 100px 0px 50px;
+  }
   /*landing*/
   #landing .wrapper{
-    padding-bottom: 130px;
+    padding-bottom:130px;
   }
   #landing .wrapper .box{
     padding:0;
@@ -529,6 +533,12 @@ footer{
   }
 
   /*Skills*/
+  #skill{
+    padding:100px 0px 50px;
+  }
+  #skill .container .title{
+    margin-bottom: 50px;
+  }
   #skill .container .title h2{
     font-size:1.1rem;
   }
@@ -547,6 +557,9 @@ footer{
   }
 
   /*Projects*/
+  #projects{
+    padding:100px 0px 50px;
+  }
   #projects .title-wrapper .title h2{
     font-size:.9rem;
   }
@@ -556,6 +569,7 @@ footer{
   }
   #projects .box-wrapper{
     grid-template-columns: 1fr;
+    grid-template-rows:300px 300px 300px;
     grid-row-gap: 20px;
   }
   #projects .box-wrapper .box{
@@ -568,6 +582,9 @@ footer{
   }
 
   /*contact*/
+  #contact{
+    padding:100px 0px 50px;
+  }
   #contact .title-wrapper .title{
     margin:0;
   }
@@ -584,7 +601,8 @@ footer{
   }
 
   #contact .form-container{
-    width:300px;
+    width:100%;
+    padding:30px;
   }
   #contact .form-container input, .form-container textarea {
     font-size:1.1rem;
@@ -606,14 +624,18 @@ footer{
 
   /*Favicons*/
   #contact .icon-wrapper{
-    margin-top:100px;
+    margin-top:0px;
+    padding-top:50px;
     grid-template-columns: 1fr;
     grid-row-gap: 30px;
+  }
+  #contact .icon-wrapper .icon3{
+    grid-column: 1 / 2;
   }
 }
 
 /********** Screen Size 600px **********/
-@media(max-width:600px){
+@media screen and (min-width:401px) and (max-width:600px){
   .full{
     height:100%;
   }
@@ -753,7 +775,7 @@ footer{
 }
 
 /********** Screen Size 768px **********/
-@media(max-width:768px){
+@media screen and (min-width:601px) and (max-width:768px){
   /*header content*/
   #header .menu{
     margin-top: 20px;
@@ -769,6 +791,9 @@ footer{
   }
 
   /*about content*/
+  #about .container .row .description p {
+    margin-top:100px;
+  }
   #about .container .row .img img{
     margin:0px 0px 50px;
   }
@@ -790,7 +815,7 @@ footer{
 }
 
 /********** Screen Size 1024px **********/
-@media(max-width:1024px){
+@media screen and (min-width:769px) and (max-width:1024px){
   /*header content*/
   #header .menu{
     margin-top: 20px;
