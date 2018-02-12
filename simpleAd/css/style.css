@@ -418,19 +418,245 @@ footer{
 
 /****************** MEDIA QUERY ******************/
 @media(max-width:400px){
-  .showcase .container .one h3{
+/*header content*/
+  header{
     width:100%;
-    padding-top:81px;
-    font-size:1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .showcase .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 200px;
-    grid-gap: 10px;
-}
+  header .logo, header .nav, header .nav ul, header .nav ul li, header .nav ul li a, header .selected {
+    margin:0;
+    padding:0;
+    float:none;
+  }
 
+  header .logo{
+    display:block;
+    text-align:center;
+    padding:50px 0px 20px;
+  }
+
+  header .nav{
+    width:100%;
+  }
+
+  header .nav ul{
+    padding-bottom:20px;
+  }
+
+  header .nav ul li {
+    font-size:12px;
+    padding:0px  20px;
+  }
+
+  /*showcase section*/
+  .showcase, .showcase .container, .container .grid {
+    padding:0;
+    margin:0;
+    width:100%;
+  }
+
+  .showcase .container{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 200px;
+    grid-gap:10px;
+  }
+
+  .showcase .container .grid{
+    grid-column: 1 / 2;
+  }
+
+  .showcase .container .one h3{
+    width:100%;
+    margin: 0 auto;
+    padding-top:81px;
+    font-size: 1rem;
+    font-weight:100;
+    line-height:1.3;
+    letter-spacing: 1px;
+    color:rgba(0, 0, 0, 0.7);
+  }
+
+  .showcase .container .two, .container .three, .container .four, .container .five {
+    grid-template-rows:250px;
+  }
+
+  /*Services content*/
+
+  .service, .service .title, .service .title h3, .service .box-wrapper, .service .box-wrapper .box{
+    padding:0;
+    margin:0;
+    width:100%;
+  }
+
+  .service {
+    margin-top:150px;
+  }
+  .service .title{
+    width:100%;
+    margin:0 auto;
+    padding:60px 0px;
+    text-align: center;
+  }
+
+  .service .title h3{
+    font-size:30px;
+    margin:0;
+    padding-bottom:10px;
+  }
+
+  .service .title p{
+    width:100%;
+    font-size:12px;
+  }
+
+  .service .box-wrapper{
+    display:block;
+  }
+
+  .service .box-wrapper .box{
+    padding: 0px 30px 40px;
+  }
+
+  .service .box-wrapper .box .fa-container{
+    border:1px solid #fff;
+    display:inline-block;
+    padding:20px;
+    border-radius:50%;
+  }
+
+  .service .box-wrapper .box .fa-container .fa{
+    font-size: 30px;
+  }
+
+  .service .box-wrapper .box h5{
+    font-size:20px;
+    font-weight: 100;
+    padding:20px 0px;
+    margin:0;
+  }
+
+  .service .box-wrapper .box p{
+    line-height:1.5;
+    color:rgba(255, 255, 255, 0.7);
+  }
+
+  /*blog content*/
+  .blog{
+    font-family:"Playfair Display", serif;
+    background:#eee;
+    margin-top:40px;
+  }
+
+  .blog .title{
+    width:100%;
+  }
+
+  .blog .title h3{
+    font-size:30px;
+  }
+  .blog .title p{
+    font-size:12px;
+    width:80%;
+    margin:0 auto;
+  }
+
+  .blog .box-wrapper{
+    display:block;
+    width:90%;
+    margin:0 auto;
+    height:100%;
+    margin:100px auto;
+  }
+
+  .blog .box-wrapper .box{
+    width:100%;
+    margin:0px 0px 50px;
+  }
+
+  .blog .box-wrapper .box h5{
+    font-size:17px;
+    padding:30px;
+  }
+
+  .blog .box-wrapper .box p{
+    font-size:14px;
+    padding:0px 10px 50px;
+  }
+
+  /*testimonial content*/
+  .testimonial,   .testimonial .title, .testimonial .container, .testimonial .test-box{
+    width:100%;
+  }
+
+  .testimonial .title{
+    width:100%;
+    padding:0px 10px;
+    margin: 0;
+  }
+
+  .testimonial .title p {
+    line-height: 2;
+    font-size:12px;
+  }
+
+  .testimonial .title h3{
+    font-size:30px;
+    padding-bottom:20px;
+  }
+
+  .testimonial .container{
+    display:block;
+    width:100%;
+    height:100%;
+    margin:100px auto;
+  }
+
+  .testimonial .container .test-box{
+    margin:40px auto;
+    width:300px;
+  }
+
+  .testimonial .container .test-box .img-container {
+      right: 123px;
+  }
+
+  /*footer content*/
+  .footer-services .box-wrapper, .footer-services .box-wrapper .box{
+    width:100%;
+    display:block;
+  }
+
+  .footer-services h5{
+    color:#fff;
+    font-size:15px;
+  }
+
+  .footer-services p{
+    font-size:12px;
+    line-height: 2;
+  }
+
+  .footer-services .box{
+    margin-bottom:60px;
+    padding-left:50px;
+  }
+
+  .footer-services .box ul li{
+    padding-bottom: 15px;
+    font-size:12px;
+  }
+
+
+  footer{
+    background: #262626;
+    color:rgba(255, 255, 255, 0.4);
+    padding:20px;
+    font-size:12px;
+    text-align:center;
+  }
+} /*end */
 
 @media (min-width:401px) and (max-width:680px){
   /*header content*/

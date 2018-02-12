@@ -555,7 +555,9 @@ footer{
     font-size:12px;
   }
   #skill .box-container{
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr;
+    grid-row-gap:40px;
+    margin:0;
   }
   #skill .box-container .box div{
     font-size:10px;
@@ -563,7 +565,7 @@ footer{
 
   /*Projects*/
   #projects{
-    padding:100px 0px 50px;
+    padding-top:100px;
   }
   #projects .title-wrapper .title h2{
     font-size:.9rem;
@@ -575,7 +577,8 @@ footer{
   #projects .box-wrapper{
     grid-template-columns: 1fr;
     grid-template-rows:300px 300px 300px;
-    grid-row-gap: 20px;
+    grid-row-gap: 40px;
+    padding:0;
   }
   #projects .box-wrapper .project{
     display:grid;
@@ -584,6 +587,7 @@ footer{
     align-items:center;
   }
   #projects .box-wrapper .box {
+    height:300px;
   }
 
   /*contact*/
@@ -622,8 +626,8 @@ footer{
   }
   #contact .form-container a{
     font-size:1.3rem;
-    height:4.6rem;
-    line-height:4.6rem;
+    height:3.6rem;
+    line-height:1.2rem;
     margin-top:2.8rem;
   }
 
@@ -640,7 +644,17 @@ footer{
   #contact .icon-wrapper .faContainer{
     font-size:12px;
   }
+  #contact .icon-wrapper h4{
+    font-size:1rem;
+  }
+  #contact .icon-wrapper p{
+    font-size:0.8rem;
+  }
+
+footer{
+  font-size:0.9rem;
 }
+} /* end of the media query for 400px */
 
 /********** Screen Size 600px **********/
 @media screen and (min-width:401px) and (max-width:600px){
@@ -680,10 +694,10 @@ footer{
 
   /*about*/
   #about .container .title h2{
-    font-size:1.5rem;
+    font-size:1.2rem;
   }
   #about .container .title h3{
-    font-size:38px;
+    font-size:29px;
     margin-bottom:10px;
   }
   #about .container .row .img img {
@@ -692,22 +706,23 @@ footer{
     margin:20px 0px 40px;
   }
   #about .container .row .description p{
-    width:400px;
-    font-size:20px;
+    width:340px;
+    font-size:16px;
     padding:0;
+    margin: 20px auto;
   }
 
   /*Skills*/
   #skill .container .title h2{
-    font-size:1.4rem;
+    font-size:1.2rem;
   }
   #skill .container .title h3{
-    font-size:38px;
+    font-size:29px;
     margin-bottom:10px;
   }
   #skill .container .title p{
-    max-width:400px;
-    font-size:15px;
+    max-width:350px;
+    font-size:12px;
   }
   #skill .box-container{
     grid-template-columns:1fr 1fr;
@@ -720,21 +735,23 @@ footer{
 
   /*Projects*/
   #projects .title-wrapper .title h2{
-    font-size:1.2rem;
+    font-size:0.9rem;
   }
   #projects .title-wrapper .title h3{
-    font-size:32px;
+    font-size:24px;
     margin-bottom:10px;
   }
   #projects .box-wrapper{
     grid-template-columns: 1fr;
     grid-template-rows: 300px 300px 300px;
     grid-row-gap: 20px;
+    padding:0;
   }
   #projects .box-wrapper .box{
     display:grid;
     justify-content:center;
     align-items:center;
+    height:300px;
   }
 
   /*contact*/
@@ -742,10 +759,10 @@ footer{
     margin:0;
   }
   #contact .title-wrapper .title h2{
-    font-size:1.3rem;
+    font-size:1.1rem;
   }
   #contact .title-wrapper .title h3{
-    font-size:38px;
+    font-size:28px;
     margin-bottom:10px;
   }
   #contact .title-wrapper .title p{
@@ -754,7 +771,7 @@ footer{
   }
 
   #contact .form-container{
-    width:500px;
+    width:100%;
     padding:30px;
   }
   #contact .form-container input, .form-container textarea {
