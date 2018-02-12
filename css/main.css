@@ -134,10 +134,10 @@ body{
   float: left;
 }
 #about .container .row .img img{
-  width:400px;
-  height:400px;
+  width:300px;
+  height:300px;
   border-radius: 50%;
-  margin-top:70px;
+  margin-top:110px;
 }
 #about .container .row .description h3{
 }
@@ -145,8 +145,8 @@ body{
   font-family:'lora', sans-serif;
   line-height:2.0;
   color:#888888;
-  font-size:25px;
-  margin:0 auto;
+  font-size:19px;
+  margin:100px auto;
 }
 
 #about .container .skill-container{
@@ -211,7 +211,7 @@ body{
   font-family:'lora', sans-serif;
   line-height:1.5;
   color:#888888;
-  font-size:20px;
+  font-size:14px;
   max-width:600px;
   margin:0 auto;
   margin-bottom:50px;
@@ -286,7 +286,8 @@ body{
   justify-items:center;
   max-width:1600px;
   margin:0 auto;
-  grid-column-gap:10px;
+  grid-column-gap: 40px;
+  padding: 0px 40px;
 
 }
 #projects .box-wrapper .box{
@@ -425,9 +426,7 @@ overflow: hidden;
   font-size: 1.5rem;
   display: block;
   letter-spacing: .2rem;
-  height: 6.6rem;
-  line-height: 6.6rem;
-  padding: 0 3rem;
+  padding: 20px;
   margin-top: 4.8rem;
   width: 100%;
   background: #FF0077;
@@ -488,7 +487,6 @@ footer{
   #header .row h1, #header ul{
     display:none;
   }
-
   /*about*/
   #about{
     margin: 100px 0px 50px;
@@ -581,10 +579,11 @@ footer{
   }
   #projects .box-wrapper .project{
     display:grid;
+    grid-row-gap:15px;
     justify-content:center;
     align-items:center;
   }
-  #projects .box-wrapper .box div{
+  #projects .box-wrapper .box {
   }
 
   /*contact*/
@@ -823,7 +822,8 @@ footer{
     padding:30px;
   }
   #contact .icon-wrapper{
-    margin-top:100px;
+    margin:0px;
+    padding-top:100px;
     grid-template-columns: 1fr;
     grid-row-gap: 30px;
   }

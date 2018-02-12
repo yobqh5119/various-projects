@@ -124,7 +124,7 @@ header .nav ul .selected a{
 .showcase .grid-content{
   justify-self:start;
   align-self:end;
-  padding-left: 20px;
+  padding: 20px;
   color:white;
   grid-row: 2 / 3;
 }
@@ -417,8 +417,22 @@ footer{
 
 
 /****************** MEDIA QUERY ******************/
+@media(max-width:400px){
+  .showcase .container .one h3{
+    width:100%;
+    padding-top:81px;
+    font-size:1rem;
+  }
 
-@media(max-width:680px){
+  .showcase .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+    grid-gap: 10px;
+}
+
+
+@media (min-width:401px) and (max-width:680px){
   /*header content*/
   header{
     width:100%;
