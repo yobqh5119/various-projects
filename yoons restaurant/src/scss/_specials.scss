@@ -1,0 +1,119 @@
+.speciality-header{
+  background:url('../img/specialty.jpeg') no-repeat;
+  background-size:cover;
+  background-position:center;
+  margin-top:100px;
+
+  .opacity-container{
+    background:rgba(0,0,0,.5);
+    width:100%;
+    min-height:400px;
+
+    .innerContent{
+      padding-top:200px;
+      h2{
+        text-transform:uppercase;
+        letter-spacing:10px;
+        text-align:center;
+        color:#fff;
+        font-size:3rem;
+      }
+    }
+  }
+}
+
+.speciality-container{
+  height:300px;
+  .innerContent{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    .container{
+      position:absolute;
+      top:-50px;
+      background:#fff;
+      max-width:700px;
+      .first-row{
+        .menu{
+          text-align:center;
+          padding:20px;
+          h3{
+            font-family:'roboto', sans-serif;
+            font-weight:700;
+            text-transform:uppercase;
+            font-size:1.2rem;
+            letter-spacing:2px;
+            margin-bottom:1.5rem;
+          }
+          p{
+            font-size:.8rem;
+            padding:0px;
+            color:$lightgrey;
+            margin-bottom:1rem;
+          }
+          h4{
+            text-transform:uppercase;
+            font-size:.9rem;
+            color:$darkbage;
+          }
+        }
+        .img-container-one{
+          background:url('../img/bibim.jpg') no-repeat;
+          background-size:cover;
+          background-position:center;
+          width:100%;
+        }
+        .img-container-two{
+          background:url('../img/cheese.jpg')no-repeat;
+          background-size:cover;
+          background-position:center;
+        }
+      }
+
+      // second row
+      .second-row{
+        .menu{
+          text-align:center;
+          padding:20px;
+          h3{
+            font-family:'roboto', sans-serif;
+            font-weight:700;
+            text-transform:uppercase;
+            font-size:1.2rem;
+            letter-spacing:2px;
+            margin-bottom:1.5rem;
+          }
+          p{
+            font-size:.8rem;
+            padding:0px;
+            color:$lightgrey;
+            margin-bottom:1rem;
+          }
+          h4{
+            text-transform:uppercase;
+            font-size:.9rem;
+            color:$darkbage;
+          }
+        }
+        .img-container-one{
+          background:url('../img/cutlet.jpg') no-repeat;
+          background-size:cover;
+          background-position:center;
+          width:100%;
+        }
+        .img-container-two{
+          background:url('../img/ddukbogi.jpg')no-repeat;
+          background-size:cover;
+          background-position:center;
+        }
+      }
+    }
+  }
+}
+
+.transition{
+  background:url('../img/transition.jpg') no-repeat;
+  background-size:cover;
+  background-position:center;
+  height:400px;
+}

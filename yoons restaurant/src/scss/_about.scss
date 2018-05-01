@@ -1,0 +1,68 @@
+.about-container{
+  .innerContent{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    height:300px;
+    .container{
+      position: absolute;
+      top:-35px;
+      background: #fff;
+      max-width:700px;
+      // First Row for the About Section
+      .first-row{
+        .col-md-8{
+          padding:0;
+        }
+        .left-content{
+          padding:40px;
+          text-align:center;
+          h3{
+            font-family:$titleFont;
+          }
+          p{
+            margin:1.5rem 0;
+            font-size:.8rem;
+          }
+          .btn{
+            border:2px solid $bage;
+            color:$bage;
+            &:hover{
+              background:$bage;
+              color:#fff;
+            }
+          }
+        }
+
+        .right-content{
+          background:url('../img/outdoor.jpg') no-repeat;
+          background-size:cover;
+        }
+      } // end of first row
+
+      .second-row{
+        .left-content{
+          background:url('../img/dining.jpg') no-repeat;
+          background-size:cover;
+          width:100%;
+          padding-left:3rem;
+        }
+
+       .right-content{
+         text-align:center;
+
+         h3{
+           margin-top:2rem;
+           font-size:1.5rem;
+           font-family:$titleFont;
+         }
+         p{
+           padding:0 10px 20px;
+           margin-top:1.5rem;
+           font-size:.8rem;
+         }
+       }
+      }
+    }
+  }
+}

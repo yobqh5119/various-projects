@@ -1,0 +1,31 @@
+.header{
+  background: url('../img/title.jpeg') no-repeat;
+  background-size:cover;
+  background-position:fixed;
+  min-height:700px;
+  color:#fff;
+
+  .opacity-background{
+    background:rgba(0,0,0,0.6);
+    width:100%;
+    min-height:700px;
+
+    .innerHeader{
+      text-align:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      min-height:700px;
+    }
+    .container{
+      h2{
+        margin-bottom:4rem;
+        font-family:$titleFont;
+      }
+      h3{
+        letter-spacing:1.5rem;
+        text-transform:uppercase;
+      }
+    }
+  }
+}

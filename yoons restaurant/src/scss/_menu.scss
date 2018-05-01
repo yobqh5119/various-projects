@@ -1,0 +1,57 @@
+.menu{
+  margin-top:100px;
+  .container{
+    .title{
+      text-align:center;
+      h2{
+        font-family:$titleFont;
+        font-size:4rem;
+      }
+
+      .line{
+        border-bottom:3px solid $bage;
+        display:inline-block;
+        width:8%;
+        margin:0 auto;
+        padding-top:1rem;
+      }
+      h4{
+        margin-top:4rem;
+        text-transform:uppercase;
+        font-family:'roboto',sans-serif;
+        letter-spacing:2px;
+        font-size:1.3rem;
+        color:$lightgrey;
+        margin-bottom:4rem;
+      }
+    }
+
+    .menu-list{
+      margin-bottom:2rem;
+      .name{
+        font-size:1rem;
+        font-family:'roboto',sans-serif;
+        font-weight:700;
+        text-transform:uppercase;
+      }
+      .container{
+        padding:0;
+        margin:0;
+
+        .description{
+          p{
+            font-size:.8rem;
+            padding-top:1rem;
+            color:$lightgrey;
+          }
+        }
+        .price{
+          color:$darkbage;
+          font-family:$titleFont;
+          font-size:3rem;
+          padding-bottom:1rem;
+        }
+      }
+    }
+  }
+}

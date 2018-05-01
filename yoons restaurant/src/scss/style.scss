@@ -1,0 +1,213 @@
+@import "variables";
+@import "navbar";
+@import "header";
+@import "about";
+@import "specials";
+@import "menu";
+
+
+*{
+  box-sizing:border-box;
+}
+
+html,body,h1,h2,h3,h4,h5,p{
+  margin:0;
+  padding:0;
+}
+
+// Location
+.location{
+  .title{
+    text-align:center;
+    margin:4rem 0;
+    h2{
+      font-family:$titleFont;
+      font-size:4rem;
+    }
+
+    .line{
+      border-bottom:3px solid $bage;
+      display:inline-block;
+      width:8%;
+      margin:0 auto;
+      padding-top:1rem;
+    }
+  }
+  #map{
+    width: 100%;
+    margin:0 auto;
+    height: 400px;
+    background-color: grey;
+  }
+}
+
+
+// Media Queries
+@media only screen and (max-width:780px){
+  .wrapper{
+    nav{
+      display:block;
+      text-align:center;
+      position:absolute;
+      &.black{
+        background:none;
+      }
+      .logo{
+        float:none;
+      }
+      .collapse-bar{
+        background: transparent;
+        color: #fff;
+        border: none;
+        font-size: 35px;
+        display:block;
+        width:100%;
+      }
+      .main-menu{
+        visibility:hidden;
+        overflow:hidden;
+        height:0px;
+        transition:height 2s ease;
+
+        &.active{
+          display:flex;
+          justify-content:center;
+          background:rgba(0,0,0,0.7);
+          width:100%;
+          visibility: visible;
+          height:auto;
+          overflow:auto;
+          ul{
+            display:block;
+            li{
+              display:block;
+              a{
+                &:hover{
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  } // End of Wrapper
+  .header{
+    .opacity-background{
+      .container{
+        h3{
+          letter-spacing:0.5rem;
+          font-size:1.1rem;
+        }
+      }
+    }
+  } // End of Header
+
+  .about-container{
+    .innerContent{
+      height:100%;
+      position:relative;
+      .container{
+        position:static;
+        .first-row{
+          .left-content{
+            background:#eee;
+            margin:3rem 0;
+          }
+          .right-content{
+            display:none;
+          }
+        }
+        .second-row{
+          .left-content{
+            margin-top:2rem;
+            height:200px;
+            width:72%;
+            margin:0 auto;
+          }
+          .right-content{
+            margin-top:1.5rem;
+            h3{
+              font-size:2.5rem;
+            }
+            p{
+              font-size:.9rem;
+            }
+          }
+        }
+      }
+    }
+  } // End of About Section
+
+  .speciality-header{
+    .opacity-container{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      .innerContent{
+        padding:0;
+      }
+    }
+  } // end of specials header
+
+  .speciality-container{
+    height:100%;
+    .innerContent{
+      .container{
+        position:static;
+        .first-row{
+          .img-container-one{
+            display:none;
+          }
+          .img-container-two{
+            display:none;
+          }
+        }
+        .second-row{
+          .img-container-one{
+            display:none;
+          }
+          .img-container-two{
+            display:none;
+          }
+        }
+      }
+    }
+  } // Speciality container
+
+  .menu{
+    .container{
+      .menu-list{
+        padding-left:2rem;
+        margin:0;
+        .col-md-6{
+          margin-bottom:1.5rem;
+          .col-md-9{
+            width:60%;
+          }
+          .col-md-3{
+            width:40%;
+            .price{
+              font-size:2rem;
+              padding-left:2.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .transition{
+    display:none;
+  }
+}
+
+@media only screen and (min-width:781px){
+  .speciality-container{
+    .innerContent{
+      .mobile-img{
+        display:none;
+      }
+    }
+  }
+}
