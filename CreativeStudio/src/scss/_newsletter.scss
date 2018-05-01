@@ -1,0 +1,44 @@
+#newsletter{
+  background: linear-gradient(228deg, rgba(68,85,250,0.8533788515406162) 0%, rgba(135,148,215,1) 32%, rgba(255,0,230,0.6797093837535014) 100%);
+  padding:50px;
+  .container{
+    text-align:center;
+    .row{
+      justify-content:center;
+      .title{
+        text-align:center;
+        h2{
+          margin-bottom:2rem;
+          color:#fff;
+        }
+        p{
+          color:rgba(255, 255, 255, 0.5);
+          margin-bottom:1.5rem;
+        }
+        input[type="email"]{
+          display:block;
+          width:100%;
+          background:rgba(255,255,255,0.3);
+          border:none;
+          padding:15px 10px;
+          color:#fff;
+          border-radius:5px;
+          margin-bottom:1rem;
+          &::placeholder{
+            color:#fff;
+            text-transform:capitalize;
+          }
+        }
+        .subscribe-btn{
+          display:block;
+          width:100%;
+          background:#50CB86;
+          color:#fff;
+          padding:15px 30px;
+          border-radius:50px;
+          text-transform:uppercase;
+        }
+      }
+    }
+  }
+}

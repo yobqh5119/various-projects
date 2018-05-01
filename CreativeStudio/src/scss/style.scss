@@ -1,0 +1,23 @@
+// Main Sass File
+@import "variable";
+@import "header-title";
+@import "service";
+@import "feature";
+@import "project";
+@import "testimonial";
+@import "newsletter";
+@import "footer";
+
+
+*{
+  box-sizing:border-box;
+}
+
+html,body,h1,h2,h3,h4,h5,p{
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:$mainFont;
+}

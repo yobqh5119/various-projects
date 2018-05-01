@@ -1,0 +1,93 @@
+#services{
+  margin-top:0;
+  .container{
+    .row{
+      animation-duration:2s;
+      justify-content:space-around;
+      min-height:300px;
+      .col-md-3{
+        display:none;
+        text-align:center;
+        margin-bottom:4rem;
+        padding:50px 0;
+        .font-container{
+          background:#efefef;
+          display:inline-block;
+          padding:25px;
+          border-radius:50%;
+          margin-bottom:1.5rem;
+          .fas{
+            color:#50CB86;
+            font-size:2rem;
+          }
+        }
+        .title{
+          margin-bottom:1rem;
+          font-size:1.3rem;
+          text-transform:uppercase;
+          font-weight:300;
+        }
+        p{
+          width:80%;
+          margin:0 auto 1rem;;
+          color:#828282;
+          font-weight:500;
+        }
+        .learn-btn{
+          background:$green;
+          color:#fff;
+          padding:10px 30px;
+          border-radius:50px;
+        }
+
+
+        &.play-section{
+          background:#eee;
+          display:none;
+          justify-content:center;
+          align-items:center;
+          margin-bottom:0;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1199px){
+  #services{
+    margin-bottom:4rem;
+    .container{
+      .row{
+        margin-top:4rem;
+        .col-md-3{
+          margin-right:30px;
+          margin-bottom:4rem;
+        }
+        .one{
+          order:2;
+        }
+        .two{
+          order:3;
+        }
+        .three{
+          order:4;
+        }
+        .play-section{
+          padding:100px 0;
+          order:1;
+          max-width:100%;
+          flex-basis:70%;
+          margin-bottom:2rem !important;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          .font-container{
+            padding:50px;
+            margin:0;
+          }
+        }
+      }
+    }
+  }
+}
