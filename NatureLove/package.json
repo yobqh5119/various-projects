@@ -1,0 +1,14 @@
+{
+  "name": "nature",
+  "version": "1.0.0",
+  "description": "landing page for the nature love website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Yoobin",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
